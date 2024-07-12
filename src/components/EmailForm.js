@@ -31,7 +31,7 @@ export default function EmailForm() {
         throw new Error('Failed to send emails.');
       }
 
-      const messages = await response.json(); // Get the list of messages from the response
+      const messages = await response.json(); 
       setStatusMessages(messages);
       console.log(messages,"messages")
     } catch (error) {
